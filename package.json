@@ -1,0 +1,20 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "nyc mocha index.test.js -w",
+    "brow": "watchify index.js index2.js -u *.test.js -o output.js"
+  },
+  "keywords": [],
+  "author": "Ashi",
+  "license": "ISC",
+  "devDependencies": {
+    "browserify": "^16.2.2",
+    "chai": "^4.1.2",
+    "istanbul": "^0.4.5",
+    "mocha": "^5.2.0",
+    "nyc": "^12.0.2"
+  }
+}
